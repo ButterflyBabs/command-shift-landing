@@ -347,8 +347,12 @@ export default function Home() {
             className="flex flex-col md:flex-row gap-12 items-center"
           >
             <motion.div variants={fadeInUp} className="flex-shrink-0">
-              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-lavender to-plum/30 flex items-center justify-center">
-                <span className="font-display text-6xl text-indigo-rich/30">Babs</span>
+              <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-lavender to-plum/30">
+                <img
+                  src="https://ik.imagekit.io/amilynne/Babs%20Headshots/ChatGPT%20Image%20May%2022,%202026,%2002_09_12%20PM.png?updatedAt=1780355364768"
+                  alt="AmiLynne Carroll (Babs)"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
             
