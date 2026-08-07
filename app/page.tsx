@@ -115,124 +115,18 @@ export default function Home() {
               </motion.div>
             </div>
             
-            {/* Right Side - App Mockup */}
+            {/* Right Side - Hero Image */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
               className="relative hidden lg:block"
             >
-              {/* Floating Cards */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -left-8 z-20 bg-white rounded-xl shadow-xl p-4 w-48"
-              >
-                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">21-Day Journey</p>
-                <p className="font-display text-lg text-indigo-rich font-semibold">Day 13 of 21</p>
-                <div className="mt-2 flex items-center gap-2">
-                  <div className="flex-1 h-2 bg-lavender/30 rounded-full overflow-hidden">
-                    <div className="w-[62%] h-full bg-teal rounded-full" />
-                  </div>
-                  <span className="font-ui text-xs text-teal font-semibold">62%</span>
-                </div>
-                <p className="font-body text-sm text-taupe mt-2">You&apos;re building your leadership.</p>
-                <p className="font-body text-sm text-gold">Keep going!</p>
-              </motion.div>
-              
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute top-20 -right-4 z-20 bg-white rounded-xl shadow-xl p-4 w-44"
-              >
-                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Daily Audio</p>
-                <p className="font-body text-sm text-indigo-rich">Day 13: Choose What Matters</p>
-                <p className="font-ui text-xs text-taupe mt-1">12:45</p>
-              </motion.div>
-              
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute bottom-20 -left-12 z-20 bg-white rounded-xl shadow-xl p-4 w-48"
-              >
-                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Focus for Today</p>
-                <p className="font-display text-base text-indigo-rich font-semibold">Aligned Decision-Making</p>
-                <p className="font-body text-sm text-taupe mt-1">Choose what matters most and lead with clarity.</p>
-              </motion.div>
-              
-              {/* Laptop/App Mockup */}
-              <div className="relative bg-indigo-rich rounded-2xl shadow-2xl p-2 ml-8">
-                {/* Screen */}
-                <div className="bg-ivory rounded-xl overflow-hidden">
-                  {/* App Header */}
-                  <div className="bg-indigo-rich px-4 py-3 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <span className="font-display text-lg text-ivory">LifeCharter</span>
-                      <span className="font-ui text-[10px] uppercase tracking-eyebrow text-gold">Command Suite</span>
-                    </div>
-                    <div className="flex gap-1.5">
-                      <div className="w-3 h-3 rounded-full bg-red-400/80" />
-                      <div className="w-3 h-3 rounded-full bg-yellow-400/80" />
-                      <div className="w-3 h-3 rounded-full bg-green-400/80" />
-                    </div>
-                  </div>
-                  
-                  {/* App Content */}
-                  <div className="p-4">
-                    {/* Challenge Header */}
-                    <div className="text-center mb-4">
-                      <p className="font-display text-2xl text-indigo-rich font-semibold">The Command Shift</p>
-                      <p className="font-ui text-xs text-plum mt-1">Day 13 of 21 · Week 2: Choosing What Matters</p>
-                    </div>
-                    
-                    {/* Progress Bar */}
-                    <div className="mb-4">
-                      <div className="flex justify-between text-xs mb-1">
-                        <span className="font-ui text-taupe">21-Day Progress</span>
-                        <span className="font-ui text-teal font-semibold">62%</span>
-                      </div>
-                      <div className="h-2 bg-lavender/30 rounded-full overflow-hidden">
-                        <div className="w-[62%] h-full bg-gradient-to-r from-teal to-gold rounded-full" />
-                      </div>
-                      <div className="flex justify-between text-xs mt-1">
-                        <span className="font-ui text-taupe">13 of 21 Days Completed</span>
-                        <span className="font-ui text-taupe">8 Days Remaining</span>
-                      </div>
-                    </div>
-                    
-                    {/* Today's Focus Card */}
-                    <div className="bg-lavender/20 rounded-lg p-3 mb-3">
-                      <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Today&apos;s Focus</p>
-                      <p className="font-display text-base text-indigo-rich font-semibold">Aligned Decision-Making</p>
-                      <p className="font-body text-sm text-taupe mt-1">Choose what matters most and lead with clarity.</p>
-                    </div>
-                    
-                    {/* Two Column Cards */}
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="bg-white border border-lavender/30 rounded-lg p-3">
-                        <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Daily Audio</p>
-                        <p className="font-body text-sm text-indigo-rich">Day 13: Choose What Matters</p>
-                      </div>
-                      <div className="bg-white border border-lavender/30 rounded-lg p-3">
-                        <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Reflection</p>
-                        <p className="font-body text-sm text-indigo-rich/70 italic">Where am I still reacting instead of leading?</p>
-                      </div>
-                    </div>
-                    
-                    {/* Anchors */}
-                    <div className="mt-3 space-y-2">
-                      <div className="flex items-center gap-2 text-xs">
-                        <div className="w-2 h-2 rounded-full bg-gold" />
-                        <span className="font-ui text-taupe">Morning Intention: Lead with clarity and purpose</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-xs">
-                        <div className="w-2 h-2 rounded-full bg-teal" />
-                        <span className="font-ui text-taupe">Text Nudge: You&apos;re not behind. You&apos;re becoming.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="/hero-image.jpg"
+                alt="The Command Shift - 21 Day Challenge"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
             </motion.div>
           </div>
         </div>
