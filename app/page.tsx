@@ -442,7 +442,7 @@ export default function Home() {
               21 days. One shift. A new way of being.
             </p>
             <p className="font-body text-lg text-ivory/60 mb-10">
-              Join the waitlist to be notified when the next round opens.
+              Registrations are live now.
             </p>
           </motion.div>
           
