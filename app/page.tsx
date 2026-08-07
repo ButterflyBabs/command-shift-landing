@@ -33,71 +33,214 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-ivory">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-ivory via-lavender/20 to-ivory" />
+      {/* Hero Section - Split Layout with App Mockup */}
+      <section className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8 xl:px-12 overflow-hidden bg-ivory">
+        <div className="absolute inset-0 bg-gradient-to-br from-ivory via-lavender/10 to-ivory" />
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.1 }}
+          animate={{ opacity: 0.08 }}
           transition={{ duration: 2 }}
-          className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_#D4AF63_0%,_transparent_50%)]"
+          className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,_#D4AF63_0%,_transparent_40%)]"
         />
         
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="font-ui text-[11px] uppercase tracking-eyebrow text-plum mb-6"
-          >
-            A 21-Day Challenge with AmiLynne Carroll
-          </motion.p>
-          
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-indigo-rich leading-tight mb-6"
-          >
-            The Command Shift
-          </motion.h1>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-body text-xl sm:text-2xl text-indigo-rich/80 max-w-2xl mx-auto mb-4 leading-relaxed"
-          >
-            Stop living by reaction. Start living by command.
-          </motion.p>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-body text-lg text-taupe max-w-xl mx-auto mb-10"
-          >
-            A guided journey to reclaim your time, energy, and aligned action.
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <a
-              href="#join"
-              className="inline-block bg-indigo-rich text-ivory font-ui text-xs uppercase tracking-button font-semibold px-10 py-4 rounded-sm hover:bg-indigo transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+        <div className="relative z-10 max-w-7xl mx-auto w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Copy */}
+            <div className="text-left pt-20 lg:pt-0">
+              {/* Brand */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="mb-8"
+              >
+                <span className="font-display text-2xl text-indigo-rich font-semibold">LifeCharter</span>
+                <span className="mx-3 text-taupe">·</span>
+                <span className="font-ui text-xs uppercase tracking-eyebrow text-gold font-semibold">Command Suite</span>
+              </motion.div>
+              
+              {/* Campaign Line */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="font-ui text-[11px] uppercase tracking-eyebrow text-plum mb-6"
+              >
+                A 21-Day Challenge with AmiLynne Carroll
+              </motion.p>
+              
+              {/* Main Headline */}
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-indigo-rich leading-[1.1] mb-6"
+              >
+                The Command Shift
+              </motion.h1>
+              
+              {/* Tagline */}
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="font-body text-2xl sm:text-3xl text-indigo-rich/80 max-w-xl mb-6 leading-relaxed italic"
+              >
+                Stop living by reaction. Start living by command.
+              </motion.p>
+              
+              {/* Body */}
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="font-body text-lg text-taupe max-w-lg mb-10 leading-relaxed"
+              >
+                A guided journey to reclaim your time, energy, and aligned action.
+              </motion.p>
+              
+              {/* CTA Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                <a
+                  href="#join"
+                  className="inline-flex items-center gap-3 bg-indigo-rich text-ivory font-ui text-xs uppercase tracking-button font-semibold px-10 py-4 rounded-sm hover:bg-indigo transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group"
+                >
+                  Join the Challenge
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </motion.div>
+            </div>
+            
+            {/* Right Side - App Mockup */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="relative hidden lg:block"
             >
-              Join the Challenge
-            </a>
-          </motion.div>
+              {/* Floating Cards */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-4 -left-8 z-20 bg-white rounded-xl shadow-xl p-4 w-48"
+              >
+                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">21-Day Journey</p>
+                <p className="font-display text-lg text-indigo-rich font-semibold">Day 13 of 21</p>
+                <div className="mt-2 flex items-center gap-2">
+                  <div className="flex-1 h-2 bg-lavender/30 rounded-full overflow-hidden">
+                    <div className="w-[62%] h-full bg-teal rounded-full" />
+                  </div>
+                  <span className="font-ui text-xs text-teal font-semibold">62%</span>
+                </div>
+                <p className="font-body text-sm text-taupe mt-2">You&apos;re building your leadership.</p>
+                <p className="font-body text-sm text-gold">Keep going!</p>
+              </motion.div>
+              
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                className="absolute top-20 -right-4 z-20 bg-white rounded-xl shadow-xl p-4 w-44"
+              >
+                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Daily Audio</p>
+                <p className="font-body text-sm text-indigo-rich">Day 13: Choose What Matters</p>
+                <p className="font-ui text-xs text-taupe mt-1">12:45</p>
+              </motion.div>
+              
+              <motion.div
+                animate={{ y: [0, -6, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                className="absolute bottom-20 -left-12 z-20 bg-white rounded-xl shadow-xl p-4 w-48"
+              >
+                <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Focus for Today</p>
+                <p className="font-display text-base text-indigo-rich font-semibold">Aligned Decision-Making</p>
+                <p className="font-body text-sm text-taupe mt-1">Choose what matters most and lead with clarity.</p>
+              </motion.div>
+              
+              {/* Laptop/App Mockup */}
+              <div className="relative bg-indigo-rich rounded-2xl shadow-2xl p-2 ml-8">
+                {/* Screen */}
+                <div className="bg-ivory rounded-xl overflow-hidden">
+                  {/* App Header */}
+                  <div className="bg-indigo-rich px-4 py-3 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="font-display text-lg text-ivory">LifeCharter</span>
+                      <span className="font-ui text-[10px] uppercase tracking-eyebrow text-gold">Command Suite</span>
+                    </div>
+                    <div className="flex gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-red-400/80" />
+                      <div className="w-3 h-3 rounded-full bg-yellow-400/80" />
+                      <div className="w-3 h-3 rounded-full bg-green-400/80" />
+                    </div>
+                  </div>
+                  
+                  {/* App Content */}
+                  <div className="p-4">
+                    {/* Challenge Header */}
+                    <div className="text-center mb-4">
+                      <p className="font-display text-2xl text-indigo-rich font-semibold">The Command Shift</p>
+                      <p className="font-ui text-xs text-plum mt-1">Day 13 of 21 · Week 2: Choosing What Matters</p>
+                    </div>
+                    
+                    {/* Progress Bar */}
+                    <div className="mb-4">
+                      <div className="flex justify-between text-xs mb-1">
+                        <span className="font-ui text-taupe">21-Day Progress</span>
+                        <span className="font-ui text-teal font-semibold">62%</span>
+                      </div>
+                      <div className="h-2 bg-lavender/30 rounded-full overflow-hidden">
+                        <div className="w-[62%] h-full bg-gradient-to-r from-teal to-gold rounded-full" />
+                      </div>
+                      <div className="flex justify-between text-xs mt-1">
+                        <span className="font-ui text-taupe">13 of 21 Days Completed</span>
+                        <span className="font-ui text-taupe">8 Days Remaining</span>
+                      </div>
+                    </div>
+                    
+                    {/* Today's Focus Card */}
+                    <div className="bg-lavender/20 rounded-lg p-3 mb-3">
+                      <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Today&apos;s Focus</p>
+                      <p className="font-display text-base text-indigo-rich font-semibold">Aligned Decision-Making</p>
+                      <p className="font-body text-sm text-taupe mt-1">Choose what matters most and lead with clarity.</p>
+                    </div>
+                    
+                    {/* Two Column Cards */}
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="bg-white border border-lavender/30 rounded-lg p-3">
+                        <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Daily Audio</p>
+                        <p className="font-body text-sm text-indigo-rich">Day 13: Choose What Matters</p>
+                      </div>
+                      <div className="bg-white border border-lavender/30 rounded-lg p-3">
+                        <p className="font-ui text-[10px] uppercase tracking-eyebrow text-plum mb-1">Reflection</p>
+                        <p className="font-body text-sm text-indigo-rich/70 italic">Where am I still reacting instead of leading?</p>
+                      </div>
+                    </div>
+                    
+                    {/* Anchors */}
+                    <div className="mt-3 space-y-2">
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-2 h-2 rounded-full bg-gold" />
+                        <span className="font-ui text-taupe">Morning Intention: Lead with clarity and purpose</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <div className="w-2 h-2 rounded-full bg-teal" />
+                        <span className="font-ui text-taupe">Text Nudge: You&apos;re not behind. You&apos;re becoming.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
         
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <motion.div
