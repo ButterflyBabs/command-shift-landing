@@ -33,116 +33,19 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-ivory">
-      {/* Hero Section - Split Layout with App Mockup */}
-      <section className="relative min-h-screen flex items-center px-4 sm:px-6 lg:px-8 xl:px-12 overflow-hidden bg-ivory">
-        <div className="absolute inset-0 bg-gradient-to-br from-ivory via-lavender/10 to-ivory" />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.08 }}
-          transition={{ duration: 2 }}
-          className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,_#D4AF63_0%,_transparent_40%)]"
-        />
-        
-        <div className="relative z-10 max-w-7xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Side - Copy */}
-            <div className="text-left pt-20 lg:pt-0">
-              {/* Brand */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="mb-8"
-              >
-                <span className="font-display text-2xl text-indigo-rich font-semibold">LifeCharter</span>
-                <span className="mx-3 text-taupe">·</span>
-                <span className="font-ui text-xs uppercase tracking-eyebrow text-gold font-semibold">Command Suite</span>
-              </motion.div>
-              
-              {/* Campaign Line */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="font-ui text-[11px] uppercase tracking-eyebrow text-plum mb-6"
-              >
-                A 21-Day Challenge with AmiLynne Carroll
-              </motion.p>
-              
-              {/* Main Headline */}
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-indigo-rich leading-[1.1] mb-6"
-              >
-                The Command Shift
-              </motion.h1>
-              
-              {/* Tagline */}
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="font-body text-2xl sm:text-3xl text-indigo-rich/80 max-w-xl mb-6 leading-relaxed italic"
-              >
-                Stop living by reaction. Start living by command.
-              </motion.p>
-              
-              {/* Body */}
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className="font-body text-lg text-taupe max-w-lg mb-10 leading-relaxed"
-              >
-                A guided journey to reclaim your time, energy, and aligned action.
-              </motion.p>
-              
-              {/* CTA Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                <a
-                  href="#join"
-                  className="inline-flex items-center gap-3 bg-indigo-rich text-ivory font-ui text-xs uppercase tracking-button font-semibold px-10 py-4 rounded-sm hover:bg-indigo transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group"
-                >
-                  Join the Challenge
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </motion.div>
-            </div>
-            
-            {/* Right Side - Hero Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              className="relative hidden lg:block"
-            >
-              <img
-                src="/hero-image.jpg"
-                alt="The Command Shift - 21 Day Challenge"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
-            </motion.div>
-          </div>
-        </div>
-        
+      {/* Hero Section - Full Image */}
+      <section className="relative w-full overflow-hidden bg-ivory">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          transition={{ duration: 1 }}
+          className="w-full"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <ChevronDown className="w-6 h-6 text-taupe" />
-          </motion.div>
+          <img
+            src="/hero-image.jpg"
+            alt="The Command Shift - 21 Day Challenge with AmiLynne Carroll"
+            className="w-full h-auto"
+          />
         </motion.div>
       </section>
 
