@@ -33,20 +33,26 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-ivory">
-      {/* Hero Section - Full Image */}
+      {/* Hero Section - Full Image (entire image links to registration) */}
       <section className="relative w-full overflow-hidden bg-ivory">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full"
+        <a
+          href="https://command-shift-app.vercel.app/register"
+          aria-label="Register free for The Command Shift 21-Day Challenge"
+          className="block w-full cursor-pointer"
         >
-          <img
-            src="/hero-image.jpg"
-            alt="The Command Shift - 21 Day Challenge with AmiLynne Carroll"
-            className="w-full h-auto"
-          />
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="w-full"
+          >
+            <img
+              src="/hero-image.jpg"
+              alt="The Command Shift - 21 Day Challenge with AmiLynne Carroll"
+              className="w-full h-auto"
+            />
+          </motion.div>
+        </a>
       </section>
 
       {/* Problem Section */}
