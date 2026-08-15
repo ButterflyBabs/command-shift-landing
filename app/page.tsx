@@ -364,13 +364,13 @@ export default function Home() {
             
             <motion.div variants={fadeInUp} className="flex-1 space-y-6">
               <p className="font-body text-xl text-indigo-rich/80 leading-relaxed">
-                Also known as &ldquo;Babs,&rdquo; AmiLynne is the creator of LifeCharter and founder of Sacred Kaleidoscope Community. She&apos;s an Alignment Architect who helps people move from fear, self-doubt, and survival patterns into purpose, clarity, and aligned action.
+                Known professionally as &ldquo;Babs,&rdquo; AmiLynne Carroll is the creator of LifeCharter and the founder of Sacred Kaleidoscope Community. As an Alignment Architect, she helps entrepreneurs and leaders move out of fear, self-doubt, and survival mode and into a way of living and working defined by purpose, clarity, and aligned action.
               </p>
               <p className="font-body text-lg text-indigo-rich/70 leading-relaxed">
-                Through her daily podcast <em>Conversations of Consequence</em>, her coaching work, and her writing, Babs has guided thousands toward remembering who they are and choosing their next aligned step.
+                Through her daily podcast <em>Conversations of Consequence</em>, her one-on-one coaching, and her writing, AmiLynne has guided thousands of people to reconnect with who they are and take their next confident, aligned step.
               </p>
               <p className="font-body text-lg text-indigo-rich/70 leading-relaxed">
-                Her approach blends spiritual wisdom with practical tools—because transformation happens when the inner and outer work meet.
+                Her methodology pairs grounded spiritual wisdom with practical, repeatable tools &mdash; because lasting transformation happens where inner work and outer action meet.
               </p>
               <p className="font-display text-2xl text-plum italic">
                 &ldquo;Head up, wings out.&rdquo;
