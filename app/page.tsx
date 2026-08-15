@@ -420,7 +420,7 @@ export default function Home() {
               },
               {
                 q: "What if it's not for me?",
-                a: "We offer a 7-day satisfaction guarantee. If you participate for the first week and find it's not the right fit, we'll refund your investment.",
+                a: "The Command Shift is completely free — there's no cost and nothing to refund. Give it the first week; if it's not your fit, simply step away, no strings attached. Whatever clarity you build in that time is yours to keep.",
               },
             ].map((faq, index) => (
               <motion.div
