@@ -99,7 +99,7 @@ export default function Home() {
           <motion.div {...fadeInUp} className="text-center mb-16">
             <p className="font-ui text-[11px] uppercase tracking-eyebrow text-gold mb-4">The Shift</p>
             <h2 className="font-display text-4xl sm:text-5xl font-semibold text-ivory">
-              From white-knuckling to soft landing
+              From white-knuckling to aligned command
             </h2>
           </motion.div>
           
