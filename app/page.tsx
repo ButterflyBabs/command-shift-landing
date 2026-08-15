@@ -416,7 +416,7 @@ export default function Home() {
               },
               {
                 q: "Will there be live calls?",
-                a: "Yes, there will be optional live Q&A calls during the challenge where you can connect with Babs and the community. Recordings will be available if you can't attend live.",
+                a: "Yes — Alignment Calls are open to everyone and run weekly on Thursdays at 1:00 PM Mountain Time on Zoom. Come connect live with Babs and the community, ask your questions, and get support as you make your shift.",
               },
               {
                 q: "What if it's not for me?",
@@ -430,6 +430,16 @@ export default function Home() {
               >
                 <h3 className="font-display text-xl font-semibold text-indigo-rich mb-3">{faq.q}</h3>
                 <p className="font-body text-indigo-rich/70 leading-relaxed">{faq.a}</p>
+                {faq.q === "Will there be live calls?" && (
+                  <a
+                    href="https://us02web.zoom.us/j/87052226903?pwd=4KdrLaVD6cpAHgGLawKVh5voPFoJQn.1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 font-ui text-sm font-semibold text-plum hover:text-indigo-rich"
+                  >
+                    Join the Alignment Call — Thursdays, 1 PM MT →
+                  </a>
+                )}
               </motion.div>
             ))}
           </motion.div>
