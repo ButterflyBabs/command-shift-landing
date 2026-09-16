@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, Clock, Heart, Compass, Sparkles, CheckCircle, ArrowRight, Mail, Instagram, Youtube, Podcast } from "lucide-react";
+import { ChevronDown, Clock, Heart, Compass, Sparkles, CheckCircle, ArrowRight, Mail, Instagram, Youtube, Podcast, Linkedin, Facebook } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -498,16 +498,22 @@ export default function Home() {
             </div>
             
             <div className="flex items-center gap-6">
-              <a href="#" className="text-ivory/60 hover:text-gold transition-colors">
+              <a href="https://www.instagram.com/amilynnecarroll" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-ivory/60 hover:text-gold transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-ivory/60 hover:text-gold transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61572729211940" target="_blank" rel="noopener noreferrer" aria-label="Facebook group" className="text-ivory/60 hover:text-gold transition-colors">
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/amilynnecarroll" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-ivory/60 hover:text-gold transition-colors">
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a href="https://www.youtube.com/amilynnecarroll" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-ivory/60 hover:text-gold transition-colors">
                 <Youtube className="w-6 h-6" />
               </a>
-              <a href="#" className="text-ivory/60 hover:text-gold transition-colors">
+              <a href="https://open.spotify.com/show/3jvbDmE9GxLefP3I3UVSDL?si=546f88fcef8041cc" target="_blank" rel="noopener noreferrer" aria-label="Podcast" className="text-ivory/60 hover:text-gold transition-colors">
                 <Podcast className="w-6 h-6" />
               </a>
-              <a href="#" className="text-ivory/60 hover:text-gold transition-colors">
+              <a href="mailto:lccssupport@amilynnecarroll.com" aria-label="Email" className="text-ivory/60 hover:text-gold transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
