@@ -513,7 +513,7 @@ export default function Home() {
               <a href="https://open.spotify.com/show/3jvbDmE9GxLefP3I3UVSDL?si=546f88fcef8041cc" target="_blank" rel="noopener noreferrer" aria-label="Podcast" className="text-ivory/60 hover:text-gold transition-colors">
                 <Podcast className="w-6 h-6" />
               </a>
-              <a href="mailto:lccssupport@amilynnecarroll.com" aria-label="Email" className="text-ivory/60 hover:text-gold transition-colors">
+              <a href="mailto:support@amilynnecarroll.com" aria-label="Email" className="text-ivory/60 hover:text-gold transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
