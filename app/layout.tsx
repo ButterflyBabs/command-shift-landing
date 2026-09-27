@@ -1,3 +1,4 @@
+import { Tracking } from "./components/Tracking";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -51,6 +52,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <Tracking />
       </body>
     </html>
   );
