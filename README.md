@@ -18,7 +18,7 @@ This is a high-converting landing page designed to promote the 21-day Command Sh
 
 1. Hero - Compelling headline and CTA
 2. Problem - The scramble isn't a character flaw
-3. The Shift - From white-knuckling to soft landing
+3. The Shift - From white-knuckling a scattered hustle to hard-won harmony
 4. What It Is - 21-day recalibration overview
 5. How It Works - 3 weeks, 3 shifts breakdown
 6. What You Get - Daily deliverables
